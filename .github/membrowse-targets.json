@@ -1,0 +1,22 @@
+[
+  {
+    "target_name": "flipper-f7",
+    "port": "stm32",
+    "board": "f7",
+    "setup_cmd": "sudo apt-get update && sudo apt-get install -y python3 python3-pip git",
+    "build_cmd": "./fbt TARGET_HW=7 DEBUG=0 COMPACT=1 firmware_all",
+    "elf": "build/f7-firmware-C/firmware.elf",
+    "ld": "targets/f7/stm32wb55xx_flash.ld",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "flipper-f18",
+    "port": "stm32",
+    "board": "f18",
+    "setup_cmd": "sudo apt-get update && sudo apt-get install -y python3 python3-pip git",
+    "build_cmd": "./fbt TARGET_HW=18 DEBUG=0 COMPACT=1 firmware_all",
+    "elf": "build/f18-firmware-C/firmware.elf",
+    "ld": "targets/f7/stm32wb55xx_flash.ld",
+    "linker_vars": ""
+  }
+]
